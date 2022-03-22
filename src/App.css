@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.inner  {
+     /*display: "flex",*/
+    position: relative;
+    /* height:"100%"
+    // width:"700px",*/
+    height:451px;
+    /* left:20%;
+    // top: "25%";
+    // flexDirection: "row",
+    // justifyContent: "justify", */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.outer {
+    /*// display: "flex",
+    // flexDirection: "column",
+    // justifyContent: "justify", 
+    // marginTop: "9em",
+    // position: "relative",
+    // marginLeft: "15em",*/
+    text-align: center;
+    margin:auto;
+    text: 100px;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dividerStyle {
+    /*// marginLeft: "50px",*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.score {
+    /*// marginLeft: "100px",*/
+    position: absolute;
+    left:45%;
+    font-size: 50px;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.player2score {
+    /*// marginLeft: "100px",*/
+    position: absolute;
+    right:45%;
+    font-size: 50px;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.style {
+   /* // width: "250px",
+    // heigth: "250px",
+    // marginLeft:25%,
+  //   left: 0; 
+  // right: 0; 
+  // marginLeft: "auto",
+  // marginRight: "auto", 
+    // margin:"auto",
+    // right:"20%",*/
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template: repeat(11, 1fr) / repeat(21, 1fr);
 }
